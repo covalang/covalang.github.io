@@ -1,0 +1,94 @@
+/* font-style: normal */
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-Light.otf') format('opentype');
+	font-weight: 100;
+	font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-Book.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-Roman.otf') format('opentype');
+    font-weight: 400;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-Heavy.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-Black.otf') format('opentype');
+    font-weight: 800;
+	font-weight: 900;
+    font-style: normal;
+}
+
+
+/* font-style: oblique */
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-LightOblique.otf') format('opentype');
+	font-weight: 100;
+	font-weight: 200;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-BookOblique.otf') format('opentype');
+    font-weight: 300;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-Oblique.otf') format('opentype');
+    font-weight: 400;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-MediumOblique.otf') format('opentype');
+    font-weight: 600;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-HeavyOblique.otf') format('opentype');
+    font-weight: 700;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirLTStd-BlackOblique.otf') format('opentype');
+    font-weight: 800;
+	font-weight: 900;
+    font-style: oblique;
+}
