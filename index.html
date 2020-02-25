@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang=en>
+	<meta charset=utf-8>
+	<title>cova</title>
+	<link rel=stylesheet href=styles/main.css />
+
+	<body>
+		<header>
+			<h1>
+				<span>co</span><span>va</span>
+			</h1>
+			<ul role=navigation>
+				<li>
+					<a href=#>Quick Start</a>
+				</li>
+				<li>
+					<a href=#>Documentation</a>
+				</li>
+				<li>
+					<a href=#>Packages</a>
+				</li>
+				<li>
+					<a href=#>Community</a>
+				</li>
+				<li>
+					<a href=#>Github</a>
+				</li>
+			</ul>
+		</header>
+
+		<main>
+			<section>
+				<pre><code>
+					namespace Test.Cova
+						$type Program
+							env -$ Env
+
+							func -$ main(args []String)
+								Env.out.writeLine("test")
+								foreach (var arg in args)
+									Env.out.writeLine(arg)
+								let line = env.in.readLine()
+								let action = x -> x;
+								foo()
+
+							func +$ foo() <I32, AsciiString>
+								Env.out.writeLine(foo.fullName)
+								var i I64 = 0
+								i += 42
+								i *= 1337
+								return (i.cast<I32>(), "ok");
+
+						interface Okay
+							name String
+							
+						type Foo
+							+name String
+							+birthDate Date
+
+							+new(name String, birthDate Date)
+								this.name = name
+								this.birthDate = birthDate
+
+						type Bar extends Foo
+							+new()
+				</code></pre>
+			</section>
+		</main>
+
+		<footer>
+			footer
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+		<script>
+			$(function() {
+				$('pre > code').each(function(i, elem) {
+					const text = $(elem).text().replace(/^\n+|\s+$/g, '');
+					const index = text.search(/\S/);
+					const lines = text.split(/\r\n|\n/);
+					for (let i = 0; i != lines.length; i++)
+						lines[i] = lines[i].substr(index);
+					const fixed = lines.join('\n');
+					$(elem).text(fixed);
+					hljs.highlightBlock(elem);
+				});
+			});
+		</script>
+	</body>
+</html>

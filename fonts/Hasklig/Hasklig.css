@@ -1,0 +1,50 @@
+@font-face {
+	font-family: Hasklig;
+	src: url("Hasklig-ExtraLight.otf") format("opentype");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Hasklig;
+	src: url("Hasklig-Light.otf") format("opentype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Hasklig;
+	src: url("Hasklig-Regular.otf") format("opentype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Hasklig;
+	src: url("Hasklig-Medium.otf") format("opentype");
+	font-weight: 400;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Hasklig;
+	src: url("Hasklig-Semibold.otf") format("opentype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Hasklig;
+	src: url("Hasklig-Bold.otf") format("opentype");
+	font-weight: 700;
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Hasklig;
+	src: url("Hasklig-Black.otf") format("opentype");
+	font-weight: 900;
+	font-style: normal;
+}

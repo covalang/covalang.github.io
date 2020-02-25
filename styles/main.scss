@@ -1,0 +1,88 @@
+@use 'syntax-highlighting';
+
+@import url(../fonts/Avenir/Avenir.css);
+@import url(../fonts/AvenirNext//AvenirNext.css);
+@import url(../fonts/Neon/Neon.css);
+@import url(../fonts/FiraCode_1.206/fira_code.css);
+@import url(../fonts/Monosten/Monosten.css);
+@import url(../fonts/Cascadia/Cascadia.css);
+@import url(../fonts/Hasklig/Hasklig.css);
+
+$color1: #002626;
+$color2: #044c58;
+$color3: #035c6e;
+$color4: #3f8994;
+$color5: #7db3bd;
+$color6: #e1ebed;
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: $color4;
+}
+
+$maxWidth: 800px;
+
+html {
+	background-color: $color1;
+	color: $color6;
+	font-family: Avenir, Helvetica, Arial, serif;
+	text-rendering: optimizeLegibility;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: $color6;
+
+	h1 {
+		font-family: Neon;
+		:first-child {
+			color: $color2;
+		}
+		color: $color4;
+
+		span {
+			vertical-align: text-bottom;
+		}
+	}
+
+	ul {
+		display: flex;
+		justify-content: flex-end;
+
+		li {
+			list-style-type: none;
+			margin: 0 20px;
+		}
+	}
+}
+
+body {
+	// max-width: $maxWidth;
+	margin: 0 auto;
+}
+
+pre {
+	margin: 2em;
+}
+
+code {
+	text-rendering: geometricPrecision;
+	font-family: Hasklig;
+	font-weight: 400;
+	font-size: 13px;
+	font-feature-settings: "calt" 1;
+	color: $color4;
+	line-height: 1.618em;
+	tab-size: 4;
+	text-shadow: 0 0 0.5px $color4;
+}
+
+footer {
+	background-color: $color2;
+}
