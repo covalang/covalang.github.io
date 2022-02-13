@@ -37,6 +37,8 @@
 						type Program $
 							env -$ Env
 							+$text -> "yes"
+							
+							func min(nums []Int) -> nums fold (a, n) -> a < c then a else c
 
 							func -$ main(args []String)
 
@@ -82,37 +84,6 @@
 
 		<script src=scripts/prism.js></script>
 		<script src=scripts/prism-cova.js></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', event => {
-				document.querySelectorAll('pre > code').forEach(elem => {
-					const text = elem.innerHTML.replace(/^\n+|\s+$/g, '');
-					const index = text.search(/\S/);
-					const lines = text.split(/\r\n|\n/);
-					for (let i = 0; i != lines.length; i++)
-						lines[i] = lines[i].substr(index);
-					const fixed = lines.join('\n');//.replace(/\t/g, '→   ');
-					elem.innerHTML = fixed;
-				});
-			});
-		</script>
-
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-		<script>
-			//import cova from 'scripts/syntax-highlighting.js';
-			document.addEventListener('DOMContentLoaded', event => {
-				//hljs.registerLanguage('cova', (hljs) = {});
-				document.querySelectorAll('pre > code').forEach(elem => {
-					const text = $(elem).text().replace(/^\n+|\s+$/g, '');
-					const index = text.search(/\S/);
-					const lines = text.split(/\r\n|\n/);
-					for (let i = 0; i != lines.length; i++)
-						lines[i] = lines[i].substr(index);
-					const fixed = lines.join('\n');//.replace(/\t/g, '→   ');
-					$(elem).text(fixed);
-					hljs.highlightBlock(elem);
-				});
-			});
-		</script> -->
+		<script src=scripts/main.js></script>
 	</body>
 </html>
